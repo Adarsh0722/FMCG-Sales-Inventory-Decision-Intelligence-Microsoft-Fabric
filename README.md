@@ -1,6 +1,8 @@
 # FMCG Sales & Inventory Decision Intelligence | Microsoft Fabric
 
 > **Portfolio project:** An analytics workflow built in Microsoft Fabric using PySpark, Spark SQL, Pandas and a Lakehouse to turn distributor-level FMCG reports into product, retailer, sales, returns and inventory insights.
+>
+> ![Inventory](https://github.com/Adarsh0722/FMCG-Sales-Inventory-Decision-Intelligence-Microsoft-Fabric/blob/main/NIVEA%20FMCG%20Analytics%20Intelligence%20Platform.png)
 
 ## Project overview
 
@@ -87,6 +89,8 @@ It then aggregates quantity and sales by season and product and ranks products w
 
 These month ranges are **project assumptions**, not confirmed company policy.
 
+![Inventory](https://github.com/Adarsh0722/FMCG-Sales-Inventory-Decision-Intelligence-Microsoft-Fabric/blob/main/Seasonal%20product%20demand.jpeg)
+
 ### 2. Product ranking and ABC classification
 
 Products are aggregated by sales value and ranked. ABC classification is based on cumulative revenue contribution:
@@ -95,7 +99,7 @@ Products are aggregated by sales value and ranked. ABC classification is based o
 - B: next 15% (up to 95% cumulative)
 - C: remaining contribution
 
-The cut-offs are analytical assumptions and should be reviewed with business stakeholders before operational use.
+![Inventory](https://github.com/Adarsh0722/FMCG-Sales-Inventory-Decision-Intelligence-Microsoft-Fabric/blob/main/Product%20ranking%20and%20ABC%20classification.jpeg)
 
 ### 3. Inventory health and stock cover
 
@@ -112,12 +116,16 @@ The notebook applies these proposed status bands:
 - Above 45 stock days: Overstock
 - No recorded sales velocity: Liquidate / investigate
 
-A separate stock-out risk concept uses fewer than 7 stock days. These are **illustrative project thresholds**, not official company rules. The calculation also uses the available transaction history and should be checked for date-window effects, seasonality and zero-sales products.
+
+![Inventory](https://github.com/Adarsh0722/FMCG-Sales-Inventory-Decision-Intelligence-Microsoft-Fabric/blob/main/Inventory%20health%20and%20stock%20cover.jpeg)
 
 ### 4. Discount analysis
 
 The notebook calculates discount value and discount percentage from transaction-level sales and discount fields, and compares discounted with non-discounted transactions.
 
+![Inventory](https://github.com/Adarsh0722/FMCG-Sales-Inventory-Decision-Intelligence-Microsoft-Fabric/blob/main/Discount%20analysis.jpeg)
+
+![Inventory](https://github.com/Adarsh0722/FMCG-Sales-Inventory-Decision-Intelligence-Microsoft-Fabric/blob/main/discount_sql.png.jpeg)
 This is **discount performance analysis, not true promotion ROI**. True ROI or profitability requires reliable product cost and a suitable incremental-sales or control-group methodology.
 
 ## Validation and modelling considerations
