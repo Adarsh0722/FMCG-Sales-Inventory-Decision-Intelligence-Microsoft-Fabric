@@ -8,8 +8,6 @@ This project explores how operational Excel reports from an FMCG distribution en
 
 The notebook uses Pandas to read Excel files, PySpark to convert the data into Spark DataFrames, and Spark SQL to build analytical summaries. The analysis focuses on product demand, sales performance, discounts, retailer activity, inventory health, salesperson performance and product returns.
 
-**Important:** The source data belongs to a company and is not included in this repository. The project notebook references Fabric Lakehouse file paths and tables, so it is intended to be reviewed as a Fabric project—not run unchanged in a local Python environment.
-
 ## Business questions addressed
 
 | Area | Business question | Main analysis |
