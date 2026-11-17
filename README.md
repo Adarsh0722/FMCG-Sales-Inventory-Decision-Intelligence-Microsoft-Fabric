@@ -87,9 +87,9 @@ The notebook creates a season from the transaction month:
 
 It then aggregates quantity and sales by season and product and ranks products within each season.
 
-These month ranges are **project assumptions**, not confirmed company policy.
-
 ![Inventory](https://github.com/Adarsh0722/FMCG-Sales-Inventory-Decision-Intelligence-Microsoft-Fabric/blob/main/Seasonal%20product%20demand.jpeg)
+
+These month ranges are **project assumptions**, not confirmed company policy.
 
 ### 2. Product ranking and ABC classification
 
